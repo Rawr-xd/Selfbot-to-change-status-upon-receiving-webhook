@@ -2,7 +2,7 @@
  
 Uses ngrok: https://ngrok.com
 
-format for the webhook sent:
+format for the webhook to send:
 
 {
   "name": "stopped"
