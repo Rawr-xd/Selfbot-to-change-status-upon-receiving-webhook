@@ -25,5 +25,5 @@ app.post('/', function(req, res){
 //create server
 http.createServer(app).listen(port, function () {
    console.log('Server started: Listening on port' + port);
-   client.login('NzMxOTc1ODgzOTA4NDQ4MzA3.GEEXyo.6xiTDaUqPntwnNEAiuARzh2XzHgVO_vUrU-FjQ');
+   client.login('token');
 });
