@@ -2,6 +2,7 @@ const { Client, Webhook, WebhookClient } = require('discord.js-selfbot-v13');
 const { Http2ServerResponse } = require('http2');
 const { json } = require('stream/consumers');
 const client = new Client({checkUpdate: false}); // All partials are loaded automatically
+const port = 3001; // port number
 
 var bodyParser = require('body-parser'),
     http = require('http'),
@@ -26,7 +27,7 @@ app.post('/', function(req, res){
 });
 
 //create server
-http.createServer(app).listen(3001, function () {
-   console.log('Server started: Listening on port 3001');
+http.createServer(app).listen(port, function () {
+   console.log('Server started: Listening on port' + port);
    client.login('token');
 });
