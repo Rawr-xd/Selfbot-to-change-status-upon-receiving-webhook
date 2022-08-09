@@ -18,3 +18,6 @@ format for the webhook to send:
 
 
 That's really it, just put your token where it says "token" in the selfbot.js file.
+
+KNOWN ISSUES:
+Doesn't seem to set online status(?), I think it's an issue with discord.js-self, I'm not entirely sure. If you have a fix dm me on discord.
