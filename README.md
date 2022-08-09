@@ -2,6 +2,8 @@
  
 Uses ngrok: https://ngrok.com
 
+To install: npm install
+
 You can change the port it uses by changing the port constant on line 5
 
 format for the webhook to send:
