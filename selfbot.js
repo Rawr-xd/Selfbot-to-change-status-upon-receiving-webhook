@@ -12,13 +12,20 @@ client.on('ready', async () => {
 
 })
 app.post('/', function(req, res){
-    res.sendStatus(200);
+    
     if(req.body.name === "driving"){
       console.log(JSON.stringify(req.body.name));
       client.user.setPresence({ activities: [{ name: 'Driving rn!' }], status: 'online' });
+      res.sendStatus(200);
+
     } else if(req.body.name === "stopped"){
       console.log(JSON.stringify(req.body.name));
       client.user.setPresence({ activities: [{ name: 'Not Driving rn!' }], status: 'online'}); 
+      res.sendStatus(200);
+
+    } else{
+      res.sendStatus(400);
+      console.log("Bad Request");
     }
 });
 
