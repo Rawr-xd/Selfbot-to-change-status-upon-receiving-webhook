@@ -1,8 +1,6 @@
-const { Client, Webhook, WebhookClient } = require('discord.js-selfbot-v13');
-const { Http2ServerResponse } = require('http2');
-const { json } = require('stream/consumers');
+const {Client} = require('discord.js-selfbot-v13');
 const client = new Client({checkUpdate: false}); // All partials are loaded automatically
-const port = 3001; // port number
+const port = 3001;
 
 var bodyParser = require('body-parser'),
     http = require('http'),
